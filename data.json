@@ -1,0 +1,19 @@
+{
+  "student":[
+    {
+      "id": 1,
+      "name": "Harrier Dubois",
+      "course": "Direito"
+    },
+    {
+      "id": 2,
+      "name": "Kim Katsuragi",
+      "course": "Direito"
+    },
+    {
+      "id": 3,
+      "name": "jean Vicquemare",
+      "course": "Direito"
+    }
+  ]
+}
