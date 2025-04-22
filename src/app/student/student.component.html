@@ -1,47 +1,40 @@
-<div class="container bg-light p-4">
+<div class="container bg-light p-4 bg-opacity-75">
   <div class="row">
-    <div class="col-7 m-auto">
-      <h1 class="text-center">Cadstro Alunos</h1>
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Nome</label>
-          <input
-            type="email"
-            class="form-control"
-            id="InputName"
-            aria-describedby="namelHelp"
-          />
-          <div id="namelHelp" class="form-text">Digite o seu nome.</div>
-        </div>
-        <div class="mb-3">
-          <label for="InputCourse" class="form-label">Curso</label>
-          <input type="Course" class="form-control" id="InputCourse" />
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Check me out</label
-          >
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-      <h2 class="text-center">Alunos cadastrados</h2>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Curso</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let s of student">
-            <th scope="row">{{s.id}}</th>
-            <td>{{s.name}}</td>
-            <td>{{s.course}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="col-7 m-auto">
+          <h1 class="text-center">Cadastro de Alunos</h1>
+          <form [formGroup]="formGroupStudent">
+              <div class="mb-3">
+                  <label for="inputName" class="form-label">Nome</label>
+                  <input formControlName="name" type="text" class="form-control" id="inputName" aria-describedby="nameHelp">
+                  <div id="nameHelp" class="form-text">Digite o seu nome</div>
+              </div>
+              <div class="mb-3">
+                  <label for="inputCourse" class="form-label">Curso</label>
+                  <input formControlName="course" type="text" class="form-control" id="inputCourse" aria-describedby="courseHelp">
+                  <div id="courseHelp" class="form-text">Digite o nome do curso</div>
+              </div>
+              <button type="submit" class="btn btn-primary" (click)="save()">Salvar</button>
+          </form>
+          <h2 class="text-center">Alunos Cadastrados</h2>
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Curso</th>
+                </tr>
+              </thead>
+              <tbody>
+                  
+                <tr *ngFor="let s of student">
+                  <th scope="row">{{s.id}}</th>
+                  <td>{{s.name}}</td>
+                  <td>{{s.course}}</td>
+                </tr>
+               
+              </tbody>
+            </table>
+
+      </div>
   </div>
 </div>

@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { CoursersComponent } from './coursers/coursers.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'student', component: StudentComponent},
   {path: 'courses', component: CoursersComponent},
   {path: 'home', component: HomeComponent}

@@ -1,14 +1,13 @@
 <div class="background-container">
-  <img
-    #backgroundImage
-    class="background-image"
-    src="revachol.png"
-    alt="Background"
-  />
+  <img class="background-image" src="revachol.png" alt="Background">
 </div>
 
-<div class="content">
+<div class="content" style="position: relative; min-height: 100vh;">
   <app-navbar></app-navbar>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
+  
+  <div style="padding-bottom: 100px;"> 
+    <router-outlet></router-outlet>
+  </div>
+  
+  <app-footer style="position: absolute; bottom: 0; width: 100%;"></app-footer>
 </div>

@@ -1,5 +1,5 @@
 {
-  "student":[
+  "student": [
     {
       "id": 1,
       "name": "Harrier Dubois",
@@ -12,8 +12,66 @@
     },
     {
       "id": 3,
-      "name": "jean Vicquemare",
+      "name": "Jean Vicquemare",
       "course": "Direito"
+    },
+    {
+      "id": 4,
+      "name": "René Arnoux",
+      "course": "Direito"
+    },
+    {
+      "id": 5,
+      "name": "Klaasje Amandou",
+      "course": "Direito"
+    },
+    {
+      "id": 6,
+      "name": "Alain",
+      "course": "Administração"
+    },
+    {
+      "id": 7,
+      "name": "Cindy the Skull",
+      "course": "Artes Plásticas"
+    },
+    {
+      "id": 8,
+      "name": "Lawrence Garte",
+      "course": "Administração"
+    },
+    {
+      "id": 9,
+      "name": "Elizabeth Beaufort",
+      "course": "Direito"
+    },
+    {
+      "id": 10,
+      "name": "Ruby",
+      "course": "Artes Plásticas"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "Direito",
+      "price": "13.000",
+      "active": "Ativo",
+      "promotion": true
+    },
+    {
+      "id": 2,
+      "name": "Administração",
+      "price": "10.000",
+      "active": "Ativo",
+      "promotion": false
+    },
+    {
+      "id": 3,
+      "name": "Artes Plásticas",
+      "price": 7.000,
+      "active": "Ativo",
+      "promotion": false
     }
   ]
 }
