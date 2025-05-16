@@ -55,21 +55,14 @@
     {
       "id": 1,
       "name": "Direito",
-      "price": "13.000",
-      "active": "Ativo",
-      "promotion": true
-    },
-    {
-      "id": 2,
-      "name": "Administração",
-      "price": "10.000",
+      "price": "13.000,00",
       "active": "Ativo",
       "promotion": false
     },
     {
-      "id": 3,
-      "name": "Artes Plásticas",
-      "price": 7.000,
+      "id": 2,
+      "name": "Administração",
+      "price": "10.000,00",
       "active": "Ativo",
       "promotion": false
     }

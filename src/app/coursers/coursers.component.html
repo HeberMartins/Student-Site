@@ -13,12 +13,17 @@
     </div>
     <div class="mb-3">
       <label for="exampleInputPreço" class="form-label">Preço</label>
+      <div class="input-group">
+        <span class="input-group-text">R$</span>
       <input
-        type="number"
+        type="text"
         class="form-control"
         id="exampleInputPreço"
         formControlName="price"
+        aria-describedby="priceHelp"
+        placeholder="0,00"
       />
+    </div>
     </div>
     <div class="d-flex d-row">
       <div class="col gap-3">
@@ -79,9 +84,9 @@
       <tr *ngFor="let c of course">
         <th scope="row">{{ c.id }}</th>
         <td>{{ c.name }}</td>
-        <td>{{ c.price }}</td>
-        <td>{{ c.active }}</td>
-        <td>{{ c.promotion }}</td>
+        <td>{{ c.price}}</td>
+        <td>{{ c.active ? 'Ativo': 'Inativo'}}</td>
+        <td>{{ c.promotion ? 'Promoção': 'Sem promoção' }}</td>
       </tr>
     </tbody>
   </table>
